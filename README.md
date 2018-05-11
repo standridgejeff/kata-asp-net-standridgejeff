@@ -2,18 +2,20 @@
 
 Engage with ASP.NET Core MVC
 
-## First Step
+## Step 1
 
-Fork and clone this repo
+Clone this repo to your machine, then create a branch to accomplish your work (`git checkout -b your-branch-name`)
 
-## Tasks
+## Step 2
+
+Complete the Tasks below:
 
 1. [ASP.NET MVC with Razor](docs/Asp.Net-Razor.md)
 1. [Inversion of Control](docs/IoC.md)
-1. [Ractive Step](docs/Ractive.md)
+1. [Web API Step](docs/WebApi.md)
 
-## Final Step
+## Step 3
 
-Make a pull request only when all tasks above have been completed.
+Push your changes (`git push`), create a pull request, and add request a review from your instructor.
 
 **Good luck!**
