@@ -17,3 +17,7 @@ Change the ProductApiController route from `[Route("api/[controller]]")]` to `[R
 ### Step 3
 
 Implement CRUD here, similar to your Product MVC controller.
+
+### Bonus Challenge
+
+Make your CRUD methods asynchronous
