@@ -2,7 +2,7 @@
 
 ## Tasks
 
-Apply the changes accomplished in your Inversion of Control project to your AspNetCoreKata.
+Apply Inversion of Control to your AspNetCoreKata.
 
 **Note:** as you complete steps, you should make commits for the changes made, unless it doesn't make sense to do so. For example, **DO NOT** commit your connection string to Git.
 
