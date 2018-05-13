@@ -6,6 +6,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreMvc", "AspNetCore
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITB.Shared", "ITB.Shared\ITB.Shared.csproj", "{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITB.Repositories", "ITB.Repositories\ITB.Repositories.csproj", "{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

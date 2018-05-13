@@ -6,7 +6,7 @@ namespace ITB.Shared
     public interface IProductRepository
     {
         IEnumerable<Product> GetProducts();
-        int GetProduct(int Id);
+        Product GetProduct(int Id);
         int DeleteProduct(int Id);
         int UpdateProduct(Product prod);
         int AddProduct(Product prod);
