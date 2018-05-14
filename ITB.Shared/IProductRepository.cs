@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ITB.Shared
 {
     public interface IProductRepository
     {
-        IEnumerable<Product> GetProducts();
+        Task<IEnumerable<Product>> GetProducts();
         Product GetProduct(int Id);
         int DeleteProduct(int Id);
         int UpdateProduct(Product prod);
