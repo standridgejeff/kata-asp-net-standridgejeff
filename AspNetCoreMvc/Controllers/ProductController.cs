@@ -28,7 +28,8 @@ namespace AspNetCoreMvc.Controllers
         // GET: Product/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            var products = _prodRepo.GetProduct(id);
+            return View(products);
         }
 
         // GET: Product/Create
@@ -45,7 +46,9 @@ namespace AspNetCoreMvc.Controllers
             try
             {
                 // TODO: Add insert logic here
-
+                var name = collection["Name"];          
+                Product prod = new Product { Name = name };
+                _prodRepo.AddProduct(prod);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -68,7 +71,9 @@ namespace AspNetCoreMvc.Controllers
             try
             {
                 // TODO: Add update logic here
-
+                var name = collection["Name"];
+                Product prod = new Product { Id = id, Name = name };
+                _prodRepo.UpdateProduct(prod);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -80,7 +85,8 @@ namespace AspNetCoreMvc.Controllers
         // GET: Product/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var prod = _prodRepo.GetProduct(id);
+            return View(prod);
         }
 
         // POST: Product/Delete/5
@@ -91,7 +97,7 @@ namespace AspNetCoreMvc.Controllers
             try
             {
                 // TODO: Add delete logic here
-
+                var rowsaffected = _prodRepo.DeleteProduct(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

@@ -11,33 +11,33 @@ namespace AspNetCoreMvc.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        // GET: api/<controller>
+        // GET: api/Values 
         [HttpGet]
-        public IEnumerable<string> Get()
+        public int Get([FromQuery] int a, [FromQuery] int b)
         {
-            return new string[] { "value1", "value2" };
+            return a + b;
         }
 
-        // GET api/<controller>/5
+        // GET api/Values/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<controller>
+        // POST api/Values
         [HttpPost]
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT api/<controller>/5
+        // PUT api/Values/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/<controller>/5
+        // DELETE api/Values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

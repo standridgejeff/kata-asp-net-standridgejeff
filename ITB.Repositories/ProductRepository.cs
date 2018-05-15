@@ -22,7 +22,7 @@ namespace ITB.Repositories
             using (var conn = _conn)
             {
                 conn.Open();
-                return conn.Execute("INSERT INTO product {Name} VALUES (@Name)", prod);
+                return conn.Execute("INSERT INTO product (Name) VALUES (@Name)", prod);
             }
         }
 
@@ -31,7 +31,7 @@ namespace ITB.Repositories
             using (var conn = _conn)
             {
                 conn.Open();
-                return conn.Execute("DELETE FROM product WHERE ProductId = @Id", new { Id });
+                return conn.Execute("DELETE FROM product WHERE ProductId = @Id", new { Id});
             }
         }
 
@@ -49,7 +49,7 @@ namespace ITB.Repositories
             using (var conn = _conn)
             {
                conn.Open();
-               return conn.Query<Product>("SELECT *, ProductId as Id FROM product WHERE ProductId = @Id").FirstOrDefault();
+               return conn.Query<Product>("SELECT *, ProductId as Id FROM product WHERE ProductId = @Id", new { Id }).FirstOrDefault();
             }
         }
     
