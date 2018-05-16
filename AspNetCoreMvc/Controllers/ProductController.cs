@@ -97,7 +97,7 @@ namespace AspNetCoreMvc.Controllers
             try
             {
                 // TODO: Add delete logic here
-                var rowsaffected = _prodRepo.DeleteProduct(id);
+                _prodRepo.DeleteProduct(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
