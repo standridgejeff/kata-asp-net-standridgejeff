@@ -1,7 +1,12 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMvc", "AspNetCoreMvc\AspNetCoreMvc.csproj", "{0CE3ABF2-89B9-47DC-8DA9-6C37464B6B76}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreMvc", "AspNetCoreMvc\AspNetCoreMvc.csproj", "{0CE3ABF2-89B9-47DC-8DA9-6C37464B6B76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITB.Shared", "ITB.Shared\ITB.Shared.csproj", "{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITB.Repositories", "ITB.Repositories\ITB.Repositories.csproj", "{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +18,19 @@ Global
 		{0CE3ABF2-89B9-47DC-8DA9-6C37464B6B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CE3ABF2-89B9-47DC-8DA9-6C37464B6B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CE3ABF2-89B9-47DC-8DA9-6C37464B6B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735B52E9-E4D6-4F59-BE0B-31495C10DF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA738EE9-7F70-4A2A-9D16-0D64902B2A93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0DFE43E-FE04-485B-9E47-4DAB0F54DA3D}
 	EndGlobalSection
 EndGlobal
