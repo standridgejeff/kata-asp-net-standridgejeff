@@ -44,12 +44,12 @@ namespace ITB.Repositories
             }
         }
 
-        public Product GetProduct(int Id)
+        public Task<Product> GetProduct(int Id)
         {
             using (var conn = _conn)
             {
                conn.Open();
-               return conn.Query<Product>("SELECT *, ProductId as Id FROM product WHERE ProductId = @Id", new { Id }).FirstOrDefault();
+                return conn.QueryFirstAsync<Product>("SELECT *, ProductId as Id FROM product WHERE ProductId = @Id", new { Id });
             }
         }
     
